@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Built-By: doyeleye
+Build-Jdk: 13.0.2 
+Created-By: Maven Integration for Eclipse
+Main-Class: com.echo.addressapi.addressapi.AddressapiApplication  
+Class-Path: ./lib/AddressDoctor5.jar
+
+

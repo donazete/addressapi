@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.5.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.echo.addressapi</groupId>
+	<artifactId>addressapi</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>addressapi</name>
+	<description>Address verification project</description>
+
+	<properties>
+		<java.version>13</java.version>
+	</properties>
+
+    <repositories>
+        <repository>
+            <id>local-maven-repo</id>
+            <!--url>file:///C:\Work\Echo.AddressValidation.Api\addressapi\local-maven-repo</url-->
+			<url>file:///app/local-maven-repo</url>
+        </repository>
+    </repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+        <!--dependency>
+            <groupId>com.addressdoctor</groupId>
+            <artifactId>AddressDoctor5</artifactId>
+            <version>1.0</version>
+        </dependency-->
+
+		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-server</artifactId>
+			<version>2.30.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.jersey.core</groupId>
+				<artifactId>jersey-client</artifactId>
+				<version>2.30.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.jersey.containers</groupId>
+				<artifactId>jersey-container-servlet</artifactId>
+				<version>2.30.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.jersey.media</groupId>
+				<artifactId>jersey-media-moxy</artifactId>
+				<version>2.30.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.jersey.test-framework.providers</groupId>
+				<artifactId>jersey-test-framework-provider-jdk-http</artifactId>
+				<version>2.30.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>2.8.6</version>
+			</dependency>
+			<dependency>
+			<groupId>org.glassfish.jersey.inject</groupId>
+			<artifactId>jersey-hk2</artifactId>
+			<version>2.30.1</version>
+			</dependency>
+			<dependency>
+			<groupId>stax</groupId>
+			<artifactId>stax-api</artifactId>
+			<version>1.0.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.jersey.core</groupId>
+				<artifactId>jersey-common</artifactId>
+				<version>2.30.1</version>
+			</dependency>
+			<dependency>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>exec-maven-plugin</artifactId>
+			<version>1.6.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.addressdoctor</groupId>
+				<artifactId>AddressDoctor5</artifactId>
+				<version>1.0</version>
+				<!--scope>system</scope>
+				<systemPath>${basedir}/lib/AddressDoctor5.jar</systemPath>
+				<systemPath>${basedir}/lib/AddressDoctor5.jar</systemPath-->
+			</dependency>
+			<dependency>
+				<groupId>org.json</groupId>
+				<artifactId>json</artifactId>
+				<version>20190722</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>3.3.2</version>
+			</dependency>
+			<dependency>
+				<groupId>io.micrometer</groupId>
+				<artifactId>micrometer-registry-prometheus</artifactId>
+			</dependency>
+			<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-actuator</artifactId>
+			</dependency>
+						<!--dependency>
+				<groupId>org.apache.cassandra</groupId>
+				<artifactId>cassandra-all</artifactId>
+				<version>3.11.6</version>
+				<exclusions>
+					<exclusion> 
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-nop</artifactId>
+						<version>1.7.30</version>
+					</exclusion>
+					<exclusion> 
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-jdk14</artifactId>
+						<version>1.7.30</version>
+					</exclusion>
+				</exclusions> 
+			</dependency-->
+	</dependencies>
+
+	
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
